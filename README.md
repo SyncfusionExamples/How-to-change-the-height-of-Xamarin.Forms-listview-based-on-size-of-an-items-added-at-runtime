@@ -18,36 +18,16 @@ This example demonstrates how to change the height of Xamarin.Forms listview bas
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="1" />
                             </Grid.RowDefinitions>
-                            <Grid RowSpacing="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="70" />
-                                </Grid.ColumnDefinitions>
+                            . . .
+                            . . .
                                 <Grid>
                                     <Image Source="{Binding ContactImage}"
                                             VerticalOptions="Center"
                                             HorizontalOptions="Center"
                                             HeightRequest="50"/>
                                 </Grid>
-                                <Grid Grid.Column="1"
-                                        RowSpacing="1"
-                                        Padding="10,0,0,0"
-                                        VerticalOptions="Center">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="*" />
-                                    </Grid.RowDefinitions>
-                                    <Label LineBreakMode="WordWrap"
-                                            TextColor="#474747"
-                                            Text="{Binding ContactName}">
-                                    </Label>
-                                    <Label Grid.Row="1"
-                                            Grid.Column="0"
-                                            TextColor="#474747"
-                                            Text="{Binding ContactNumber}">
-                                    </Label>
-                                </Grid>
+                                . . .
+                                . . .
                             </Grid>
                             <StackLayout Grid.Row="1" BackgroundColor="Gray" HeightRequest="1"/>
                         </Grid>
