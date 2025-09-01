@@ -38,7 +38,7 @@ This example demonstrates how to change the height of Xamarin.Forms listview bas
     </syncfusion:SfListView>
 </StackLayout>
 
-Code behind:
+C#:
 visualContainer = listView.GetVisualContainer();
 visualContainer.PropertyChanged += VisualContainer_PropertyChanged;
 
@@ -46,16 +46,6 @@ private void VisualContainer_PropertyChanged(object sender, System.ComponentMode
 {
         if (e.PropertyName == "Height" && this.HeightRequest != visualContainer.Height)
             listView.HeightRequest = visualContainer.Height;
-}
-
-private void Button_Clicked(object sender, EventArgs e)
-{
-    Random r=new Random();
-    var contact = new Contacts();
-    contact.ContactName = "Irene";
-    contact.ContactNumber = "123-4056";
-    contact.ContactImage = ImageSource.FromResource("SfListViewSample.Images.Image" + r.Next(0, 28) + ".png");
-    viewModel.contactsinfo.Add(contact);
 }
 ```
 
